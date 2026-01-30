@@ -15,6 +15,12 @@ const project = {
             options: { source: 'name' }
         },
         {
+            name: 'order',
+            title: 'Order',
+            type: 'number',
+            description: 'Lower numbers show first on the site'
+        },
+        {
             name: 'image',
             title: 'Image',
             type: 'image',

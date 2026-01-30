@@ -15,10 +15,11 @@ export async function getProjects(): Promise<Project[]> {
     });
 
     return client.fetch(
-        groq`*[_type == "project"]{
+        groq`*[_type == "project"] | order(order asc, _createdAt desc){
             _id,
             _createdAt,
             name,
+            order,
             "slug": slug.current,
             "image": {
                 "url": image.asset->url,

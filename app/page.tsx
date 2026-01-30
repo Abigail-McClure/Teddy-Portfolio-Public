@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 import { getProjects } from '@/sanity/sanity-utils'
 
 export default async function Home() {
@@ -9,19 +10,25 @@ export default async function Home() {
 
   return (
     <div className="max-w-5xl mx-auto py-20 px-4 sm:px-6">
+    <Link
+    href="/about"
+    className="fixed right-6 top-6 rounded-lg border border-[hsla(90,27%,57%,0.85)] bg-white/80 px-3 py-1 text-sm font-medium
+    text-gray-700 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:border-orange-300 hover:bg-white
+    hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+    about
+    </Link>
 
       <div className="text-center">
         <p className="text-sm uppercase tracking-[0.35em] text-gray-500">Portfolio</p>
         <h1 className="mt-4 text-5xl sm:text-6xl lg:text-7xl font-black leading-tight">
-          <span className="bg-gradient-to-r from-green-300 via-yellow-350 to-orange-400 bg-clip-text text-transparent">
-            Teddy Henderson
+          <span className="bg-gradient-to-r from-[hsla(90,27%,57%,0.85)] via-[hsla(48,81%,71%,1.00)] to-[hsla(2,39%,68%,0.8)] bg-clip-text text-transparent">
+            Teddy Henderson 
           </span>
         </h1>
-        <p className="mt-4 text-lg sm:text-xl text-gray-600">Seattle-based artist exploring color, texture, and light.</p>
-        <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-green-300 via-yellow-350 to-orange-400" />
+        <p className="mt-4 text-lg sm:text-xl text-gray-600">Seattle-based 3D artist exploring color, texture, and light</p>
+        <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[hsla(85,25%,57%,0.9)] via-[hsla(48,81%,71%,1.00)] to-[hsla(2,39%,68%,0.8)]" />
       </div>
 
-      <h2 className="mt-24 font-semibold text-gray-700 text-3xl">My Work</h2>
       <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <div
