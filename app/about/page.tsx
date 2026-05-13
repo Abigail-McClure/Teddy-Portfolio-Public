@@ -34,20 +34,6 @@ export default function AboutPage() {
           dimension, whether that be a creature, plant, rock formation, etc. Stepping into a display of my
           pieces should feel like stepping into a different world.
         </p>
-        <p className="mt-4 text-lg leading-relaxed text-white/90">
-          I incorporate many different mediums into my pieces; however, I am very loyal to my
-          love for ceramics and always find a way back to it. I find the concept of using organic matter
-          from the earth to create artwork comforting. Although ceramics is my main medium, I tend to
-          incorporate small details using other materials such as glass into my pieces. When looking for
-          inspiration, I like to explore outdoors to find interesting forms & textures that I can integrate into
-          my work.
-        </p>
-        <p className="mt-4 text-lg leading-relaxed text-white/90">
-          I create art for the purpose of bringing me and others joy. I find happiness in creating fun,
-          funky pieces, and I aspire for viewers to feel the whimsy and magic that I intend to convey with
-          my art. Moving forward, I am interested in finding ways for my work to further interact with the
-          environment.
-        </p>
       </div>
     </div>
   );
